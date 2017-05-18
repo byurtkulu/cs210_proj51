@@ -17,6 +17,14 @@ UAdelays = [12895873,7399741,2720805,2512578,3978918,4612759,5831704,6648458,619
 WNdelays = [11470445,8230629,8447603,6360097,9955591,10423665,11224333,12094777,12349540]
 delays9E = [0,0,0,0,0,0,0,2285792,1726803]
 
+OOdelays = [0,0,0,2125532,2982997,2941282,4729541,4848850,4137595]
+XEdelays = [0,0,0,1332807,1921948,2698243,4271628,5035103,4154705]
+DHdelays = [0,0,0,2638536,2932459,877846,0,0,0]
+USdelays = [6586411,3870767,1860425,1693836,2830401,3515474,3939983,5787520,2556181]
+F9delays = [0,0,0,0,0,303223,453707,721561,565097]
+
+
+
 years = ['2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008']
 
 plt.scatter(years, AAdelays, label='AA')
@@ -26,8 +34,16 @@ plt.scatter(years, COdelays, label='CO')
 plt.scatter(years, DLdelays, label='DL')
 plt.scatter(years, HAdelays, label='HA')
 plt.scatter(years, UAdelays, label='UA')
-plt.scatter(years, WNdelays, label='WN')
-plt.scatter(years, delays9E, label='9E', color='k')
+plt.scatter(years, WNdelays, label='WN',marker='^')
+plt.scatter(years, delays9E, label='9E',marker='^')
+plt.scatter(years, OOdelays, label='OO',marker='^')
+plt.scatter(years, XEdelays, label='XE',marker='^')
+plt.scatter(years, DHdelays, label='DH',marker='^')
+plt.scatter(years, USdelays, label='US',marker='^')
+plt.scatter(years, F9delays, label='F9',marker='^')
+
+
+
 
 
 plt.xlabel('years')
